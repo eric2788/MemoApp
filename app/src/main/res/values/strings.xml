@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MemoApp</string>
+    <string name="example_title">This is an example title</string>
+    <string name="example_desp">example desp</string>
+    <string name="more">more</string>
+    <string name="edit">Edit</string>
+    <string name="about">about</string>
+    <string name="delete">DELETE</string>
+    <string name="done">DONE</string>
+    <string name="empty">you don\'t have any memo, let\'s create it!</string>
+    <string name="title">Title: </string>
+    <string name="enter_your_title">Enter your title</string>
+    <string name="here_to_start_your_memo">here to start your memo</string>
+    <string name="about_us_name">My Name is Eric Lam\nA little programmer who knows java, kotlin, C#, python and typescript.</string>
+    <string name="author_icon">author_icon</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/memo"
+    tools:context=".MemoCreateActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="373dp"
+                android:layout_height="46dp"
+                android:autofillHints="@string/title"
+                android:backgroundTint="@android:color/white"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:inputType="textPersonName"
+                android:labelFor="@+id/edit_title"
+                android:padding="2dp"
+                android:text="@string/enter_your_title"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="70dp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="354dp"
+        android:layout_height="646dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <EditText
+            android:id="@+id/edit_para"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:autofillHints="paragraph"
+            android:fontFamily="casual"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:labelFor="@+id/edit_para"
+            android:lines="35"
+            android:maxLines="500"
+            android:padding="8dp"
+            android:text="@string/here_to_start_your_memo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    </ScrollView>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginEnd="20dp"
+           android:layout_marginBottom="24dp"
+           android:backgroundTint="@color/colorPrimary"
+           android:clickable="true"
+           android:focusable="true"
+           android:onClick="onSaveMemo"
+           android:src="@drawable/ic_save_black_24dp" />
+
+   </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
